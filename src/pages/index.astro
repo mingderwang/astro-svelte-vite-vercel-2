@@ -1,0 +1,10 @@
+---
+import Hello from '../components/Hello.svelte';
+import Counter from '../components/Counter.svelte';
+import CounterSimple from '../components/CounterSimple.svelte';
+---
+<Hello />
+<Counter client:load />
+<CounterSimple client:visible />
+<h2>the following counter is not working </h2>
+<CounterSimple />
