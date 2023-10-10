@@ -1,0 +1,14 @@
+// src/views/profile.astro
+---
+import { get } from '@sveltech/routify/store.js';
+---
+
+<astro-head>
+  <title>Profile Page</title>
+</astro-head>
+
+<main>
+  <h1>Profile Page</h1>
+  <p>Welcome, {get().user.username}!</p>
+  <a href="/logout">Logout</a>
+</main>
