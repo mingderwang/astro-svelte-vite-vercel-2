@@ -11,6 +11,9 @@ dependencies:
   '@kahi-ui/framework':
     specifier: ^0.6.4
     version: 0.6.4
+  '@roxi/routify':
+    specifier: ^2.18.12
+    version: 2.18.12
   '@sveltech/routify':
     specifier: ^1.9.10
     version: 1.9.10
@@ -20,6 +23,15 @@ dependencies:
   astro:
     specifier: ^3.2.0
     version: 3.2.0(@types/node@20.7.2)
+  carbon-components-svelte:
+    specifier: ^0.80.0
+    version: 0.80.0
+  carbon-icons-svelte:
+    specifier: ^12.3.0
+    version: 12.3.0
+  carbon-pictograms-svelte:
+    specifier: ^12.8.0
+    version: 12.8.0
   express:
     specifier: ^4.18.2
     version: 4.18.2
@@ -33,13 +45,13 @@ dependencies:
     specifier: ^1.0.0
     version: 1.0.0
   svelte:
-    specifier: ^4.2.1
+    specifier: ^4.0.0
     version: 4.2.1
 
 devDependencies:
   '@astrojs/svelte':
-    specifier: ^4.0.2
-    version: 4.0.2(astro@3.2.0)(svelte@4.2.1)(typescript@5.2.2)(vite@4.4.9)
+    specifier: ^4.0.3
+    version: 4.0.3(astro@3.2.0)(svelte@4.2.1)(typescript@5.2.2)(vite@4.4.9)
   '@astrojs/vercel':
     specifier: ^5.0.1
     version: 5.0.1(astro@3.2.0)
@@ -103,11 +115,11 @@ packages:
     dependencies:
       prismjs: 1.29.0
 
-  /@astrojs/svelte@4.0.2(astro@3.2.0)(svelte@4.2.1)(typescript@5.2.2)(vite@4.4.9):
-    resolution: {integrity: sha512-XB9Sexq+iW5aUpctDk6zuKHbWIAuPlAnZKbfgaS9VOaOUtx1t12crP9YoKEVcTifXYgoRuWWfeEAm2I8pYlLIQ==}
+  /@astrojs/svelte@4.0.3(astro@3.2.0)(svelte@4.2.1)(typescript@5.2.2)(vite@4.4.9):
+    resolution: {integrity: sha512-3toH/mkNFqMdmnMXh4XcksZfuOAwWVXdRrISyoRgNn1HalG6WBACFT+RwxAwpH7eXW/zUfrpfyZdcxYnVucHTg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
-      astro: ^3.0.11
+      astro: ^3.2.3
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.6(svelte@4.2.1)(vite@4.4.9)
@@ -782,6 +794,40 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /@roxi/routify@2.18.12:
+    resolution: {integrity: sha512-0phd3vkrfc3u4ujEMPQxIdSQTXs/od892cHB4ZwmY6xIGDtfrI/CW0QMrO+BPYeZ5iFFVq8w7htvH1SQsLEqtw==}
+    hasBin: true
+    dependencies:
+      '@roxi/ssr': 0.2.1
+      '@types/node': 12.20.55
+      chalk: 4.1.2
+      cheap-watch: 1.0.4
+      commander: 7.2.0
+      configent: 2.2.0
+      esm: 3.2.25
+      fs-extra: 9.1.0
+      log-symbols: 3.0.0
+      picomatch: 2.3.1
+      rollup-pluginutils: 2.8.2
+    transitivePeerDependencies:
+      - canvas
+      - encoding
+      - supports-color
+    dev: false
+
+  /@roxi/ssr@0.2.1:
+    resolution: {integrity: sha512-C86xWJOmtCGZr/U4MURqePM0oDKFkTlLeEyT07R+7jSKvREKZ2manJAeAebYudJLYEGITEPGqObhRan32bUUbg==}
+    dependencies:
+      bufferutil: 4.0.7
+      jsdom: 16.7.0(bufferutil@4.0.7)(utf-8-validate@5.0.10)
+      node-fetch: 2.7.0
+      utf-8-validate: 5.0.10
+    transitivePeerDependencies:
+      - canvas
+      - encoding
+      - supports-color
+    dev: false
+
   /@sveltech/routify@1.9.10:
     resolution: {integrity: sha512-cTqhDc4DpmDUQfuT9lMJMzZ9FS0fVXahdGGP4ciHiVRkAX4yGwEt+d7mvV4dWPLYsjofAsb6HLJKem0ZLSSIFA==}
     hasBin: true
@@ -1341,6 +1387,20 @@ packages:
   /caniuse-lite@1.0.30001541:
     resolution: {integrity: sha512-bLOsqxDgTqUBkzxbNlSBt8annkDpQB9NdzdTbO2ooJ+eC/IQcvDspDc058g84ejCelF7vHUx57KIOjEecOHXaw==}
 
+  /carbon-components-svelte@0.80.0:
+    resolution: {integrity: sha512-OTk75KJGEQQLEKSvsZUk4GEYtg6ClSKVyTJPvqiBIOUJ1LVW9ZZppCAieWeBvff1GqVrPm1EDthl6YS730lONA==}
+    dependencies:
+      flatpickr: 4.6.9
+    dev: false
+
+  /carbon-icons-svelte@12.3.0:
+    resolution: {integrity: sha512-RZI1nJEjnpgBka4A6zwEkNNqYfV9H7WjcyQ4JYPLoMO8a7N7mAVbaG9ngHUEahxf/byaHBp+EJD3Natf1dkylQ==}
+    dev: false
+
+  /carbon-pictograms-svelte@12.8.0:
+    resolution: {integrity: sha512-QYL8hBOgyShH51/xPKRmcMKMb5BgBCXETXhjFnhXO3G/Px1H07DdtiekCme46jDuytm0DSOfnyth2ZxvMMagBA==}
+    dev: false
+
   /ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
 
@@ -1489,12 +1549,23 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
+  /commander@7.2.0:
+    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
+    engines: {node: '>= 10'}
+    dev: false
+
   /common-ancestor-path@1.0.1:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
 
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
+
+  /configent@2.2.0:
+    resolution: {integrity: sha512-yIN6zfOWk2nycNJ2JFNiWEai0oiqAhISIht8+pbEBP8bdcpwoQ74AhCZPbUv9aRVJwo7wh1MbCBDUV44UJa7Kw==}
+    dependencies:
+      dotenv: 8.6.0
+    dev: false
 
   /console-control-strings@1.1.0:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
@@ -1990,6 +2061,10 @@ packages:
     dependencies:
       micromatch: 4.0.5
       pkg-dir: 4.2.0
+
+  /flatpickr@4.6.9:
+    resolution: {integrity: sha512-F0azNNi8foVWKSF+8X+ZJzz8r9sE1G4hl06RyceIaLvyltKvDl6vqk9Lm/6AUUCi5HWaIjiUbk7UpeE/fOXOpw==}
+    dev: false
 
   /focusable-selectors@0.4.0:
     resolution: {integrity: sha512-tc/236hUU3xemsRLu1RKhRQ5UWHjRM9iJTli1zdac43h7b1biRSgG0mILM0qrcsKaGCHcOPJ6NKbk12ouKHLpw==}
