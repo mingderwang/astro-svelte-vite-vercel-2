@@ -26,7 +26,7 @@
 <nav class="container-fluid">
 	<ul>
 	  <li>
-		<a href="./" class="contrast" onclick="event.preventDefault()"><strong>Brand</strong></a>
+      <a href="https://picocss.com" class="secondary">Pico</a> •
 	  </li>
 	</ul>
 	<ul>
